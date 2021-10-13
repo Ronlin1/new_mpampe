@@ -1,0 +1,37 @@
+<div class="col-md-4 col-sm-12 col-xs-12">
+  <div class="campaign-item">
+    <a class="overlay" href="campaign_detail.html">
+      <img src="images/campaigns_02.jpg" alt="" />
+      <span class="fas fa-link"></span>
+    </a>
+    <div class="campaign-box">
+      <a href="explore_layout_one.html#" class="category"
+        ><%= campaign.category %></a
+      >
+      <h3>
+        <a href="campaign_detail.html"><%= campaign.shortDescription %></a>
+      </h3>
+      <div class="campaign-description"><%= campaign.description %></div>
+      <div class="campaign-author">
+        <a class="author-icon" href="explore_layout_one.html#"
+          ><img src="images/author-01.png" alt="" /></a
+        >by
+        <a class="author-name" href="explore_layout_one.html#"
+          ><%= campaign.user.fullName %></a
+        >
+      </div>
+      <div class="process">
+        <div class="progress">
+          <div class="progress-bar">
+            <div class="progress-value"><span>65</span>%</div>
+          </div>
+        </div>
+        <div class="process-info">
+          <div class="process-pledged"><span>245</span>Days left</div>
+          <div class="process-funded"><span>6</span>Backers</div>
+          <div class="process-time"><span>$5487</span>Funded</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
